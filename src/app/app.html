@@ -1,0 +1,76 @@
+<div class="page">
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <span>DeployLab</span>
+    </div>
+
+    <span class="navbar-tag">Angular + GitHub + Render</span>
+  </header>
+
+  <main class="hero">
+    <div class="status">
+      <span class="status-dot"></span>
+      Aplicación desplegada
+    </div>
+
+    <h1>Del código a producción.</h1>
+
+    <p class="subtitle">
+      Una demostración práctica de despliegue continuo
+      utilizando Angular, GitHub y Render.
+    </p>
+
+    <div class="version-card">
+      <span class="card-label">VERSIÓN ACTUAL</span>
+      <div class="version-number">v{{ version }}</div>
+      <p>Primera versión de nuestra aplicación</p>
+    </div>
+
+    <div class="demo-card">
+      <h2>Demostración interactiva</h2>
+      <p>
+        Esta aplicación Angular funciona correctamente
+        y está preparada para su despliegue.
+      </p>
+
+      <div class="counter">{{ clicks() }}</div>
+
+      <button (click)="incrementar()">
+        Incrementar contador →
+      </button>
+    </div>
+
+    <section class="pipeline">
+      <h2>Nuestro flujo de despliegue</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-icon">💻</span>
+          <strong>Desarrollo</strong>
+          <small>VS Code + Angular</small>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">
+          <span class="step-icon">📦</span>
+          <strong>Repositorio</strong>
+          <small>GitHub</small>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">
+          <span class="step-icon">🚀</span>
+          <strong>Producción</strong>
+          <small>Render</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Procesos de Ingeniería del Software · Demo de despliegue continuo
+  </footer>
+</div>
