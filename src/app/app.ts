@@ -8,7 +8,7 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css',
 })
 export class App {
-  version = '1.0.0';
+  version = '2.0.0';
   clicks = signal(0);
 
   incrementar() {
